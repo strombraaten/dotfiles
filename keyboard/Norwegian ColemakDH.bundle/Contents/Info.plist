@@ -5,17 +5,17 @@
 	<key>CFBundleIdentifier</key>
 	<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument</string>
 	<key>CFBundleName</key>
-	<string>Norwegian ColemakDH</string>
+	<string>Norwegian ColemakDH copy</string>
 	<key>CFBundleVersion</key>
 	<string>3</string>
-	<key>KLInfo_Norwegian ColemakDH-v3</key>
+	<key>KLInfo_Norwegian ColemakDH</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument.norwegiancolemakdh-v3</string>
+		<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument.norwegiancolemakdh</string>
 		<key>TISIntendedLanguage</key>
 		<string>nb</string>
 	</dict>
