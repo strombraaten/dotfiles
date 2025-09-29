@@ -1,0 +1,119 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "key" : "e",
+          "type" : "url",
+          "value" : "raycast://extensions/FezVrasta/emoji/emoji"
+        },
+        {
+          "key" : "p",
+          "type" : "url",
+          "value" : "raycast://confetti"
+        },
+        {
+          "key" : "c",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/open-camera"
+        },
+        {
+          "key" : "n",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/raycast-notes/raycast-notes"
+        }
+      ],
+      "key" : "r",
+      "type" : "group"
+    },
+    {
+      "key" : "f",
+      "type" : "application",
+      "value" : "/Applications/Figma.app"
+    },
+    {
+      "key" : "o",
+      "type" : "application",
+      "value" : "/Applications/Obsidian.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "g",
+          "type" : "application",
+          "value" : "/Applications/ChatGPT.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Claude.app"
+        },
+        {
+          "key" : "r",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/raycast-ai/ai-chat"
+        }
+      ],
+      "key" : "a",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/Applications/Messenger.app"
+        },
+        {
+          "key" : "i",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/Telegram.app"
+        },
+        {
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/Discord.app"
+        }
+      ],
+      "key" : "m",
+      "type" : "group"
+    },
+    {
+      "key" : "t",
+      "type" : "application",
+      "value" : "/Applications/Microsoft Teams.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Cursor.app"
+        },
+        {
+          "key" : "w",
+          "type" : "application",
+          "value" : "/Applications/Warp.app"
+        }
+      ],
+      "key" : "k",
+      "type" : "group"
+    },
+    {
+      "key" : "c",
+      "type" : "application",
+      "value" : "/Applications/CleanShot X.app"
+    }
+  ],
+  "type" : "group"
+}
