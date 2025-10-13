@@ -48,13 +48,7 @@ ln -sf ~/dev/dotfiles/sketchybar/sketchybarrc ~/.config/sketchybar/sketchybarrc
 ln -sf ~/dev/dotfiles/sketchybar/plugins ~/.config/sketchybar/plugins
 ```
 
-#### 3. Install Keyboard Layout
-```bash
-# Copy Norwegian ColemakDH layout
-cp -R "keyboard/Norwegian ColemakDH.bundle" ~/Library/Keyboard\ Layouts/
-```
-
-#### 4. Restart Applications
+#### 3. Restart Applications
 ```bash
 # Restart applications to pick up new configs
 killall "Leader Key" 2>/dev/null || true
@@ -69,7 +63,7 @@ open -a "AeroSpace"
 
 ## Configuration Overview
 
-- **`keyboard/`** - Norwegian ColemakDH keyboard layout bundle
+- **`keyboard/`** - Norwegian ColemakDH keyboard layout bundle (archived - for reference only)
 - **`leaderkey/`** - Leader Key shortcuts and automation config
 - **`karabiner/`** - Karabiner-Elements key remapping config
 - **`aerospace/`** - AeroSpace window manager config
@@ -78,5 +72,4 @@ open -a "AeroSpace"
 ## Notes
 
 - All configs use symlinks so changes are automatically synced via Git
-- The keyboard layout needs to be manually selected in System Preferences after installation
 - Services (like borders) will start automatically on login after setup

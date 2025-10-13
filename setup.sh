@@ -38,10 +38,6 @@ ln -sf "$(pwd)/sketchybar/sketchybarrc" ~/.config/sketchybar/sketchybarrc
 ln -sf "$(pwd)/sketchybar/plugins" ~/.config/sketchybar/plugins
 echo "✓ SketchyBar config linked"
 
-echo "Installing keyboard layout..."
-cp -R "keyboard/Norwegian ColemakDH.bundle" ~/Library/Keyboard\ Layouts/
-echo "✓ Keyboard layout installed"
-
 echo "Starting services..."
 brew services start felixkratz/formulae/borders || true
 brew services start felixkratz/formulae/sketchybar || true
@@ -57,5 +53,4 @@ sketchybar &
 
 echo "Setup complete!"
 echo "Don't forget to:"
-echo "  1. Add the Norwegian ColemakDH layout in System Preferences"
-echo "  2. Grant permissions to Karabiner-Elements and AeroSpace"
+echo "  1. Grant permissions to Karabiner-Elements and AeroSpace"
