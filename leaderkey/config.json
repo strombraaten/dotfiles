@@ -113,6 +113,16 @@
       "key" : "c",
       "type" : "application",
       "value" : "/Applications/CleanShot X.app"
+    },
+    {
+      "key" : "n",
+      "type" : "application",
+      "value" : "/Applications/Notion.app"
+    },
+    {
+      "key" : "b",
+      "type" : "application",
+      "value" : "/Applications/Arc.app"
     }
   ],
   "type" : "group"
