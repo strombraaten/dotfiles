@@ -34,7 +34,7 @@
     {
       "key" : "o",
       "type" : "application",
-      "value" : "/Applications/Obsidian.app"
+      "value" : "/Applications/Microsoft Outlook.app"
     },
     {
       "actions" : [
@@ -110,8 +110,9 @@
       "type" : "group"
     },
     {
-      "key" : "c",
+      "key" : "1",
       "type" : "application",
+<<<<<<< Updated upstream
       "value" : "/Applications/CleanShot X.app"
     },
     {
@@ -123,6 +124,52 @@
       "key" : "b",
       "type" : "application",
       "value" : "/Applications/Arc.app"
+=======
+      "value" : "/Applications/1Password.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "type" : "url",
+          "value" : "cleanshot://scrolling-capture"
+        },
+        {
+          "key" : "r",
+          "type" : "url",
+          "value" : "cleanshot://record-screen"
+        },
+        {
+          "key" : "d",
+          "type" : "url",
+          "value" : "cleanshot://toggle-desktop-icons\n\ncleanshot://toggle-desktop-icons\n\ncleanshot://toggle-desktop-icons\n\ncleanshot://toggle-desktop-icons"
+        },
+        {
+          "key" : "h",
+          "type" : "url",
+          "value" : "cleanshot://open-history"
+        },
+        {
+          "key" : "a",
+          "type" : "url",
+          "value" : "cleanshot://all-in-one"
+        }
+      ],
+      "iconPath" : "/Applications/CleanShot X.app",
+      "key" : "c",
+      "label" : "CleanShot",
+      "type" : "group"
+    },
+    {
+      "key" : "i",
+      "type" : "application",
+      "value" : "/System/Applications/System Settings.app"
+    },
+    {
+      "key" : "s",
+      "type" : "application",
+      "value" : "/Applications/Slack.app"
+>>>>>>> Stashed changes
     }
   ],
   "type" : "group"
