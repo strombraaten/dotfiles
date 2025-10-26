@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+Always use the documentation for yabai to answer any questions the user has about commands and such. The documentation can be found within the directory, and is called yabai.asciidoc.
+
+Keep it simple, keep it short.

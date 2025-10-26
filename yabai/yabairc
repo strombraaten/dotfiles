@@ -13,8 +13,8 @@ osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
 
 yabai -m config layout                      bsp
 
-yabai -m config top_padding                 0
-yabai -m config bottom_padding              48
+yabai -m config top_padding                 10
+yabai -m config bottom_padding              10
 yabai -m config left_padding                10
 yabai -m config right_padding               10
 yabai -m config window_gap                  10
