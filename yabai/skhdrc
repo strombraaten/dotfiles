@@ -28,6 +28,10 @@ cmd + ctrl + alt - 0x2B : yabai -m space --layout stack        # Hyper + ,
 # Restart Yabai (Hyper + Y)
 cmd + ctrl + alt - y : yabai --restart-service
 
+# Resize Window (Hyper + - / =)
+cmd + ctrl + alt - 0x1B : yabai -m window --ratio rel:-0.05   # Hyper + - (smaller)
+cmd + ctrl + alt - 0x18 : yabai -m window --ratio rel:+0.05   # Hyper + = (larger)
+
 # ----------------------------------------------------------------
 # MEH KEY - MOVING/MANIPULATING OPERATIONS
 # ----------------------------------------------------------------
