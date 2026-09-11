@@ -41,3 +41,4 @@ cask "slack"
 cask "microsoft-teams"
 cask "microsoft-outlook"
 cask "ticktick"
+cask "logi-options+"           # Logitech Ergo M mouse config
