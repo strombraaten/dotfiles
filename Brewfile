@@ -11,7 +11,14 @@
 #                        tap-trust policy, which blocks non-interactive `brew bundle`.
 #                        Install manually: see README for the exact commands.
 
+# Formulae
+brew "starship"
+brew "atuin"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+
 # Casks
+cask "font-jetbrains-mono-nerd-font"
 cask "1password"
 cask "figma"
 cask "tidal"

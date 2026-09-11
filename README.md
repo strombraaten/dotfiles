@@ -26,7 +26,8 @@ Where I keep track of the configuration for the apps I use, plus a `Brewfile` so
    cd ~/dev/dotfiles
    ./setup.sh
    ```
-   This installs everything in `Brewfile` and symlinks the yabai/skhd config into place.
+   This installs everything in `Brewfile` and symlinks the yabai/skhd, Ghostty, and zsh
+   config into place.
 
 5. Grant permissions:
    - yabai: System Settings → Privacy & Security → Accessibility
@@ -47,6 +48,10 @@ Where I keep track of the configuration for the apps I use, plus a `Brewfile` so
 
 - **`Brewfile`** — every app/CLI tool used daily, installed via `brew bundle`
 - **`yabai/`** — yabai window manager + skhd hotkey config
+- **`ghostty/`** — Ghostty terminal config (Catppuccin Mocha theme, JetBrains Mono Nerd Font,
+  shell integration)
+- **`zsh/`** — `.zshrc` (Atuin history search, zsh-autosuggestions, zsh-syntax-highlighting,
+  Starship prompt) and `starship.toml`
 
 ## Notes
 

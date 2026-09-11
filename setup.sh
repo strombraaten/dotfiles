@@ -16,6 +16,17 @@ ln -sf "$(pwd)/yabai/skhdrc" ~/.skhdrc
 echo "✓ yabai config linked (~/.yabairc)"
 echo "✓ skhd config linked (~/.skhdrc)"
 
+echo "Setting up Ghostty config symlink..."
+mkdir -p ~/Library/"Application Support"/com.mitchellh.ghostty
+ln -sf "$(pwd)/ghostty/config" ~/Library/"Application Support"/com.mitchellh.ghostty/config.ghostty
+echo "✓ Ghostty config linked"
+
+echo "Setting up zsh config symlinks..."
+ln -sf "$(pwd)/zsh/.zshrc" ~/.zshrc
+mkdir -p ~/.config
+ln -sf "$(pwd)/zsh/starship.toml" ~/.config/starship.toml
+echo "✓ zsh config linked (~/.zshrc, ~/.config/starship.toml)"
+
 echo "Starting services..."
 brew services start koekeishiya/formulae/yabai || true
 brew services start koekeishiya/formulae/skhd || true

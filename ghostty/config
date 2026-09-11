@@ -1,0 +1,32 @@
+# Ghostty config
+# Symlinked to: ~/Library/Application Support/com.mitchellh.ghostty/config.ghostty
+# Docs: ghostty +show-config --default --docs (or `man 5 ghostty`)
+
+# Theme
+theme = Catppuccin Mocha
+
+# Font
+font-family = JetBrainsMono Nerd Font
+font-size = 16
+
+# Window
+background-opacity = 0.98
+background-blur = 20
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = true
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Shell integration (cwd tracking, cursor shape on prompt, etc.)
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# Scrollback
+scrollback-limit = 100000
+
+# Behavior
+confirm-close-surface = false
+copy-on-select = clipboard
