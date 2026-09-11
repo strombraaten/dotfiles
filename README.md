@@ -1,75 +1,46 @@
 # dotfiles
-Where I keep track of all the configurations for the apps I use
 
-## Quick Setup
+Where I keep track of the configuration for the apps I use, plus a `Brewfile` so a new Mac gets set up fast.
 
-### Prerequisites
-- macOS with Homebrew installed
-- Git configured
+## New machine setup
 
-### One-line setup (run from this directory):
-```bash
-./setup.sh
-```
+1. Install Git and Xcode Command Line Tools (needed before Homebrew):
+   ```bash
+   xcode-select --install
+   ```
+2. Install Homebrew if it's not already there:
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+   Follow the printed instructions to add `brew` to PATH.
+3. Clone this repo and run the setup script:
+   ```bash
+   git clone https://github.com/strombraaten/dotfiles.git ~/dev/dotfiles
+   cd ~/dev/dotfiles
+   ./setup.sh
+   ```
+   This installs everything in `Brewfile` (apps + yabai/skhd) and symlinks the yabai/skhd config into place.
 
-### Manual Setup
+4. Grant permissions:
+   - yabai: System Settings → Privacy & Security → Accessibility
+   - skhd: Accessibility + Input Monitoring
 
-#### 1. Install Applications
-```bash
-# Window management and visual enhancements
-brew install --cask karabiner-elements
-brew install --cask aerospace
+## Apps not in the Brewfile (manual download)
 
-# Window borders and status bar
-brew tap FelixKratz/formulae
-brew install borders
-brew install sketchybar
-brew install --cask font-hack-nerd-font
-brew services start felixkratz/formulae/borders
-brew services start felixkratz/formulae/sketchybar
-```
-
-#### 2. Link Configuration Files
-```bash
-# LeaderKey config
-ln -sf ~/dev/dotfiles/leaderkey/config.json "/Users/$(whoami)/Library/Application Support/Leader Key/config.json"
-
-# Karabiner-Elements config
-mkdir -p ~/.config/karabiner
-ln -sf ~/dev/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
-
-# AeroSpace config
-mkdir -p ~/.config/aerospace
-ln -sf ~/dev/dotfiles/aerospace/aerospace.toml ~/.config/aerospace/aerospace.toml
-
-# SketchyBar config
-mkdir -p ~/.config/sketchybar
-ln -sf ~/dev/dotfiles/sketchybar/sketchybarrc ~/.config/sketchybar/sketchybarrc
-ln -sf ~/dev/dotfiles/sketchybar/plugins ~/.config/sketchybar/plugins
-```
-
-#### 3. Restart Applications
-```bash
-# Restart applications to pick up new configs
-killall "Leader Key" 2>/dev/null || true
-killall "Karabiner-Elements" 2>/dev/null || true
-killall "AeroSpace" 2>/dev/null || true
-
-# Reopen applications
-open -a "Leader Key"
-open -a "Karabiner-Elements" 
-open -a "AeroSpace"
-```
+| App | Link | Note |
+|---|---|---|
+| Bazecore (Dygma) | https://dygma.com/pages/raise-configuration | |
+| Dropover | Mac App Store | no cask available |
+| Screen Studio | https://screen.studio | |
+| ScreenBrush | Mac App Store | |
+| Beeper | — | probably blocked by a Telegram restriction |
 
 ## Configuration Overview
 
-- **`keyboard/`** - Norwegian ColemakDH keyboard layout bundle (archived - for reference only)
-- **`leaderkey/`** - Leader Key shortcuts and automation config
-- **`karabiner/`** - Karabiner-Elements key remapping config
-- **`aerospace/`** - AeroSpace window manager config
-- **`sketchybar/`** - SketchyBar status bar config and plugins
+- **`Brewfile`** — every app/CLI tool used daily, installed via `brew bundle`
+- **`yabai/`** — yabai window manager + skhd hotkey config
 
 ## Notes
 
-- All configs use symlinks so changes are automatically synced via Git
-- Services (like borders) will start automatically on login after setup
+- Configs are symlinked, so edits are automatically tracked by Git.
+- Older configs (Karabiner, AeroSpace, SketchyBar, Leader Key, keyboard layout) that are no longer in daily use were removed for a leaner setup. The full history is preserved under the git tag `setup-oct-2025` if any of them are ever needed again.

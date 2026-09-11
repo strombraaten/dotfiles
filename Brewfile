@@ -1,0 +1,39 @@
+# Brewfile
+# Installs everything with: brew bundle --file=Brewfile
+#
+# Apps NOT listed here (must be installed manually):
+#   - Bazecore (Dygma)   https://dygma.com/pages/raise-configuration
+#   - Dropover           Mac App Store (no cask available)
+#   - Screen Studio      https://screen.studio
+#   - ScreenBrush        Mac App Store
+#   - Beeper             probably blocked (Telegram restriction)
+
+tap "koekeishiya/formulae"
+
+# CLI / window management
+brew "koekeishiya/formulae/yabai"
+brew "koekeishiya/formulae/skhd"
+
+# Casks
+cask "1password"
+cask "figma"
+cask "tidal"
+cask "ogdesign-eagle"          # Eagle (eagle.cool)
+cask "elgato-camera-hub"
+cask "arc"
+cask "raycast"
+cask "obsidian"
+cask "readdle-spark"           # Spark Mail
+cask "zed"
+cask "claude"
+cask "aqua-voice"
+cask "ghostty"
+cask "github"                  # GitHub Desktop
+cask "jordanbaird-ice"         # Ice (menu bar)
+cask "karabiner-elements"
+cask "rocket"
+cask "cleanshot"
+cask "slack"
+cask "microsoft-teams"
+cask "microsoft-outlook"
+cask "ticktick"
