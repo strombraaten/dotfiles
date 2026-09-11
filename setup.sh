@@ -7,6 +7,9 @@ cd "$(dirname "$0")"
 echo "Installing apps via Brewfile..."
 brew bundle --file=Brewfile
 
+echo "Note: yabai + skhd are not in the Brewfile (untrusted tap) — install them"
+echo "manually first, see README. Skipping if already installed."
+
 echo "Setting up yabai + skhd config symlinks..."
 ln -sf "$(pwd)/yabai/yabairc" ~/.yabairc
 ln -sf "$(pwd)/yabai/skhdrc" ~/.skhdrc

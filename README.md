@@ -13,22 +13,30 @@ Where I keep track of the configuration for the apps I use, plus a `Brewfile` so
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
    Follow the printed instructions to add `brew` to PATH.
-3. Clone this repo and run the setup script:
+3. Install yabai + skhd manually (their tap is untrusted under Homebrew's tap-trust
+   policy, so it can't go through `brew bundle` non-interactively):
+   ```bash
+   brew tap koekeishiya/formulae
+   brew install koekeishiya/formulae/yabai koekeishiya/formulae/skhd
+   ```
+
+4. Clone this repo and run the setup script:
    ```bash
    git clone https://github.com/strombraaten/dotfiles.git ~/dev/dotfiles
    cd ~/dev/dotfiles
    ./setup.sh
    ```
-   This installs everything in `Brewfile` (apps + yabai/skhd) and symlinks the yabai/skhd config into place.
+   This installs everything in `Brewfile` and symlinks the yabai/skhd config into place.
 
-4. Grant permissions:
+5. Grant permissions:
    - yabai: System Settings → Privacy & Security → Accessibility
    - skhd: Accessibility + Input Monitoring
 
-## Apps not in the Brewfile (manual download)
+## Apps not in the Brewfile (manual install)
 
 | App | Link | Note |
 |---|---|---|
+| yabai + skhd | https://github.com/koekeishiya | untrusted tap — see step 3 above |
 | Bazecore (Dygma) | https://dygma.com/pages/raise-configuration | |
 | Dropover | Mac App Store | no cask available |
 | Screen Studio | https://screen.studio | |

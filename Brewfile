@@ -7,12 +7,9 @@
 #   - Screen Studio      https://screen.studio
 #   - ScreenBrush        Mac App Store
 #   - Beeper             probably blocked (Telegram restriction)
-
-tap "koekeishiya/formulae"
-
-# CLI / window management
-brew "koekeishiya/formulae/yabai"
-brew "koekeishiya/formulae/skhd"
+#   - yabai + skhd       tap "koekeishiya/formulae" is untrusted under Homebrew's
+#                        tap-trust policy, which blocks non-interactive `brew bundle`.
+#                        Install manually: see README for the exact commands.
 
 # Casks
 cask "1password"
